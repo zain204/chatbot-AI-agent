@@ -1,0 +1,22 @@
+[project]
+name = "chatbot-workflow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "zain", email = "zainashfaq617@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain-groq>=1.2.1",
+    "langgraph>=1.2.24",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+chatbot-workflow = "chatbot_workflow:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
